@@ -7,6 +7,7 @@
 body{
     font-family: 'Roboto', sans-serif;
     color: #E5E7EB;
+    font-size: 1.2rem;
 }
 
 .topPage{
@@ -110,64 +111,84 @@ nav li a:hover {
 
 
 
-.moreInfo h2 {
-    color: #1F2937;
-    font-weight: bolder;
-    font-size: 36px;
-    margin-bottom: 50px;
-}
 
 .moreInfo{
     display: flex;
     flex-direction: column;
     align-items: center;
     padding-bottom: 4rem;
-    margin-top: 50px;
+    margin-top: 40px;
+
     
 
 }
 
-.boxes{
+.moreInfo h2 {
+    color: #1F2937;
+    font-weight: 800;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+
+
+.boxes {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
 }
 
-.smallBox {
-    width: 100px; /* Adjust the width to your desired size */
-    height: 100px; /* Adjust the height to your desired size */
-    border: 1px solid #3882F6;
-}
-
-
-.box{
+.box {
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center;
+    width: 180px; /* Adjust the width to your desired size */
+    margin: 30px;
 }
 
-
+.smallBox {
+    width: 100%; /* This will make the width of the smallBox the same as its parent box */
+    height: 0;
+    padding-bottom: 100%; /* This will make the height the same as the width */
+    border: 5px solid #3882F6;
+    border-radius: 10px;
+}
 
 .box p {
-    color: #1F2937;
+    color: #1f2937cb;
+    margin-top: 10px;
+    font-weight: 500;
 }
 
 .quote-box{
     background-color: #E5E7EB;
-    padding: 7rem;
+    padding: 10rem 15rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
 }
 
-.quote-box p {
+.quote{
     color: #1F2937;
+    font-size: 36px;
+    font-weight: lighter;
+    font-style: italic;
 }
 
-.author {
+.author{
     color: #1F2937 ;
     font-weight: bolder;
+    font-style:normal;
+    font-size: 28px;
+    text-align: right;
+
+
 }
 
 .cta-box{
-    padding: 5rem;
+    padding: 7rem 12.5rem;
 }
 
 .cta-content {
